@@ -7,20 +7,20 @@ SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
 DROP TABLE IF EXISTS `kategorie`;
 CREATE TABLE `kategorie` (
-  `Nazev_produktu Ibro-Maslic` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `Kategorie_produktu Ibro-Maslic` text COLLATE utf8_czech_ci NOT NULL,
-  `Nakupni_cena Ibro-Maslic` text COLLATE utf8_czech_ci NOT NULL,
-  `Cena Ibro-Maslic` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `Material Ibro-Maslic` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `Velikost Ibro-Maslic` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `KS Ibro-Maslic` int(11) NOT NULL,
-  `SKU Ibro-Maslic` varchar(255) COLLATE utf8_czech_ci NOT NULL,
-  `Cas nakupu Ibro-Maslic` datetime NOT NULL,
-  `id Ibro-Maslic` int(11) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`id Ibro-Maslic`)
+  `nazev_produktu_ibro_maslic` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `kategorie_produktu_ibro_maslic` text COLLATE utf8_czech_ci NOT NULL,
+  `nakupni_cena_ibro_maslic` text COLLATE utf8_czech_ci NOT NULL,
+  `cena_ibro_maslic` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `material_ibro_maslic` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `velikost_ibro_maslic` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `ks_ibro_maslic` int(11) NOT NULL,
+  `sku_ibro_maslic` varchar(255) COLLATE utf8_czech_ci NOT NULL,
+  `cas_nakupu_ibro_maslic` datetime NOT NULL,
+  `id_ibro_maslic` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id_ibro_maslic`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
-INSERT INTO `kategorie` (`Nazev_produktu Ibro-Maslic`, `Kategorie_produktu Ibro-Maslic`, `Nakupni_cena Ibro-Maslic`, `Cena Ibro-Maslic`, `Material Ibro-Maslic`, `Velikost Ibro-Maslic`, `KS Ibro-Maslic`, `SKU Ibro-Maslic`, `Cas nakupu Ibro-Maslic`, `id Ibro-Maslic`) VALUES
+INSERT INTO `kategorie` (`nazev_produktu_ibro_maslic`, `kategorie_produktu_ibro_maslic`, `nakupni_cena_ibro_maslic`, `cena_ibro_maslic`, `material_ibro_maslic`, `velikost_ibro_maslic`, `ks_ibro_maslic`, `sku_ibro_maslic`, `cas_nakupu_ibro_maslic`, `id_ibro_maslic`) VALUES
 ('Černý kožený batoh',	'batoh',	'2500',	'3 580,00',	'Kuze',	'25x35x15',	1,	'CSFBKD35',	'2021-01-01 00:00:00',	1),
 ('Černý pánský batoh',	'batoh',	'250',	'680,00',	'Polyester ',	' 22x30x13',	0,	'CSNBBPP30',	'2021-01-01 00:00:00',	2),
 ('Černý velký batoh',	'batoh',	'450',	'1 280,00',	'Polyester ',	'30x43x17',	1,	'CVNBBPP43',	'2021-01-01 00:00:00',	3),
@@ -32,4 +32,4 @@ INSERT INTO `kategorie` (`Nazev_produktu Ibro-Maslic`, `Kategorie_produktu Ibro-
 ('Crossbody Pánská Hnědá Kožená Kabelka',	'kabelka',	'1500',	'2 980',	'Kuze',	'23x28x7',	1,	'CSPCSKKP28',	'2021-01-01 00:00:00',	9),
 ('Dámská Elegantní Kožená Kabelka',	'kabelka',	'2500',	'5 980',	'Kuze',	'34x30x13',	1,	'RVPRKKD34',	'2021-01-01 00:00:00',	10);
 
--- 2021-12-07 18:45:12
+-- 2021-12-14 20:30:36
